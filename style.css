@@ -1,0 +1,123 @@
+*{
+    font-family: 'PT sans' sans-serif;
+   
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box; 
+}
+.showcase{
+    background: url(img2.jpg) no-repeat center/cover;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100vh;
+    /*position:relative;*/
+    text-align: center;
+}
+.showcase h1{
+    padding:20vh;
+}
+#menu-bar{
+    background:rgb(4, 49, 100);
+    text-align:center;
+}
+#menu-bar ul {
+    display: inline-flex;
+    list-style:none;
+    color: #fff;
+}
+#menu-bar ul li{
+    width: 150px;
+    margin:15px;
+    padding:15px;
+    
+}
+#menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.active, #menu-bar ul li:hover{
+    background:#0fa7e4;
+    border-radius: 3px;
+
+}
+#menu-bar .fa
+{
+    margin-right: 8px;
+}
+#sub-menu-1{
+    display:none;
+}
+#menu-bar ul li:hover #sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(4, 49, 100);
+    margin-top: 15px;
+    margin-left:-15px;
+}
+#menu-bar ul li:hover #sub-menu-1 ul 
+{
+    display: block;
+    margin: 10px;
+}
+#menu-bar ul li:hover #sub-menu-1 ul li
+{
+   width: 150px;
+   padding: 10px;
+   border-bottom: 1px dotted #fff;
+   background: transparent;
+   border-radius: 0;
+}
+#menu-bar ul li:hover #sub-menu-1 ul li:last-child
+{
+   
+   border-bottom: 0;
+}
+.footer .container{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 18px;
+
+}
+.footer .container ul{
+    list-style: none;
+ }
+    .footer .container ul li:first-child {
+       font-size: 22px;
+       padding-bottom:0.5rem;
+       border-bottom: #444 solid 1px;
+       margin-bottom: 1rem;
+}
+.footer .container ul li a {
+    text-decoration: none;
+    color:#fff;
+}
+.footer
+{
+    color:#fff;
+    background: #252529;
+    margin-top:0px;
+    text-align: center;
+}
+.fa-angle-right{
+    float:right;
+}
+#sub-menu-2 {
+display:none;
+}
+.hoverme:hover #sub-menu-2{
+    display:block;
+    position:absolute;
+    margin-top:-40px;
+margin-left:140px;
+background: rgb(4, 49, 100);
+}
+footer{
+    background:rgb(4, 49, 100);
+    padding:1rem;
+    text-align:center;
+}
